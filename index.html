@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FadeMaster Barbershop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2>FadeMaster</h2>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#booking">Book</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Premium Grooming For Modern Gentlemen</h1>
+        <p>Fresh cuts. Sharp fades. Professional service.</p>
+        <a href="#booking" class="btn">Book Appointment</a>
+    </div>
+</header>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Haircut</h3>
+            <p>Rs. 800</p>
+        </div>
+
+        <div class="card">
+            <h3>Beard Trim</h3>
+            <p>Rs. 500</p>
+        </div>
+
+        <div class="card">
+            <h3>Hair + Beard</h3>
+            <p>Rs. 1200</p>
+        </div>
+    </div>
+</section>
+
+<section id="team">
+    <h2>Meet Our Barbers</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Ahmed</h3>
+            <p>Fade Specialist</p>
+        </div>
+
+        <div class="card">
+            <h3>Usman</h3>
+            <p>Beard Expert</p>
+        </div>
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+
+    <div class="cards">
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <p>Best fade in town!</p>
+        </div>
+
+        <div class="card">
+            ⭐⭐⭐⭐⭐
+            <p>Clean shop and great service.</p>
+        </div>
+    </div>
+</section>
+
+<section id="booking">
+    <h2>Book Appointment</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <button type="submit">Book Now</button>
+    </form>
+</section>
+
+<a class="whatsapp"
+href="https://wa.me/923001234567"
+target="_blank">WhatsApp</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Appointment request submitted!");
+});
+</script>
